@@ -274,75 +274,101 @@ nav.scrolled{background:rgba(7,7,10,0.9);backdrop-filter:blur(20px);border-botto
     <h2 class="section-title">ابدأ بالحجم <span class="gold-text">المناسب ليك</span></h2>
   </div>
   
-    <!-- Setup Fee Notice -->
-    <div style="background:linear-gradient(135deg,rgba(245,196,0,0.07),rgba(245,196,0,0.02));border:1px solid rgba(245,196,0,0.22);border-radius:18px;padding:22px 28px;margin-bottom:36px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;" class="fade-up">
-      <div style="width:50px;height:50px;background:rgba(245,196,0,0.12);border:1px solid rgba(245,196,0,0.25);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">⚡</div>
-      <div style="flex:1;min-width:200px;">
-        <div style="font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:.14em;margin-bottom:5px;">رسوم الإعداد — مرة واحدة فقط</div>
-        <div style="font-size:1rem;font-weight:800;margin-bottom:4px;">Setup Fee: <span style="color:var(--gold);">999 جنيه</span> <span style="font-size:.78rem;font-weight:400;color:var(--text-dim);">تُدفع في أول شهر فقط</span></div>
-        <div style="font-size:.82rem;color:var(--text-dim);line-height:1.7;">تشمل: إعداد الـ system + ربط الحسابات + بناء الـ knowledge base + اختبار كامل قبل التشغيل. من الشهر الثاني بتدفع الباقة بس.</div>
+    
+    <!-- Discount + Timer Banner -->
+    <div style="background:linear-gradient(135deg,rgba(245,196,0,0.1),rgba(245,196,0,0.04));border:1.5px solid rgba(245,196,0,0.35);border-radius:20px;padding:22px 28px;margin-bottom:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;" class="fade-up">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="background:var(--gold);color:#07070a;font-size:.72rem;font-weight:900;padding:6px 14px;border-radius:50px;letter-spacing:.05em;white-space:nowrap;">خصم 60%</div>
+        <div>
+          <div style="font-size:.9rem;font-weight:800;margin-bottom:2px;">عرض الإطلاق — لفترة محدودة</div>
+          <div style="font-size:.78rem;color:var(--text-dim);">الأسعار المعروضة بعد الخصم · السعر الأصلي مشطوب</div>
+        </div>
       </div>
-      <div style="text-align:center;flex-shrink:0;">
-        <div style="font-size:.7rem;color:var(--text-dim);margin-bottom:4px;">مثال: الشهر الأول</div>
-        <div style="background:rgba(245,196,0,0.08);border:1px solid rgba(245,196,0,0.18);border-radius:10px;padding:10px 18px;">
-          <div style="font-size:.78rem;color:var(--text-dim);">باقة Starter</div>
-          <div style="font-size:1rem;font-weight:900;" class="gold-text">499 + 999 = 1,498 جنيه</div>
-          <div style="font-size:.68rem;color:var(--text-dim);margin-top:2px;">الشهر الثاني: 499 جنيه بس</div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <span style="font-size:.78rem;color:var(--text-dim);font-weight:600;">ينتهي العرض خلال:</span>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-h" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">18</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">ساعة</div>
+          </div>
+          <span style="font-size:1.2rem;font-weight:900;color:var(--gold);">:</span>
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-m" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">42</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">دقيقة</div>
+          </div>
+          <span style="font-size:1.2rem;font-weight:900;color:var(--gold);">:</span>
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-s" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">07</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">ثانية</div>
+          </div>
         </div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
-    <!-- Starter -->
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:28px;transition:all 0.35s;" class="fade-up" onmouseover="this.style.borderColor='rgba(245,196,0,0.3)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
-      <div style="font-size:0.85rem;font-weight:700;color:var(--text-dim);margin-bottom:4px;">Starter</div>
-      <div style="font-size:2rem;font-weight:900;margin:12px 0 4px;" class="gold-text">499</div>
-      <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:20px;">جنيه / شهر</div>
-      <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;display:flex;flex-direction:column;gap:10px;">
-        <div>✓ منصة واحدة</div>
-        <div>✓ 30 منشور شهرياً</div>
-        <div>✓ نشر تلقائي</div>
-      </div>
-      <a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20الاشتراك%20في%20باقة%20Starter%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:0.85rem;">اشترك الآن</a>
+<div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
+<div class="price-name">Starter</div>
+<div style="font-size:.78rem;color:var(--text-dim);margin-bottom:10px;">منصة واحدة · حتى 30 منشور</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">1,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">699</div>
+<div class="price-period">جنيه مصري / شهرياً</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,698 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(699 + 999 setup) — الشهر الثاني: 699 بس</span></div>
+<div class="price-divider"></div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>منصة واحدة</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>حتى 30 منشور شهرياً</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>نشر تلقائي</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير شهري</div>
+<div style="margin-top:auto;padding-top:20px;">
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Starter%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+</div>
+</div>
+<div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
+<div class="price-name">Growth</div>
+<div style="font-size:.78rem;color:var(--text-dim);margin-bottom:10px;">منصتين · حتى 60 منشور</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">3,300 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">1,299</div>
+<div class="price-period">جنيه مصري / شهرياً</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">2,298 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(1,299 + 999 setup) — الشهر الثاني: 1,299 بس</span></div>
+<div class="price-divider"></div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>منصتين</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>حتى 60 منشور</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>نشر مستمر</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>ستوري تلقائية</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير أسبوعي</div>
+<div style="margin-top:auto;padding-top:20px;">
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Growth%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+</div>
+</div>
+<div class="price-card featured">
+<div class="pop-badge">الأكثر طلباً</div>
+<div class="price-name" style="color:var(--gold);">Business</div>
+<div style="font-size:.78rem;color:var(--text-dim);margin-bottom:10px;">حتى 5 منصات · نشر يومي</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">6,300 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">2,499</div>
+<div class="price-period">جنيه مصري / شهرياً</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,498 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,499 + 999 setup) — الشهر الثاني: 2,499 بس</span></div>
+<div class="price-divider" style="background:rgba(245,196,0,0.15);"></div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>حتى 5 منصات</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>نشر يومي</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>ستوري تلقائية</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>جدولة شهر كامل</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير أسبوعي</div>
+<div style="margin-top:auto;padding-top:20px;">
+<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Business%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+</div>
+</div>
+<div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
+<div class="price-name">Custom</div>
+<div style="font-size:.78rem;color:var(--text-dim);margin-bottom:10px;">جميع المنصات · بدون حد ثابت</div>
+<div class="price-amount gold-text" style="font-size:1.5rem;margin-top:10px;">تواصل معنا</div>
+<div class="price-period">سعر حسب الاحتياج</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">Setup Fee:</span> <strong style="color:var(--gold);">999 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">مرة واحدة فقط</span></div>
+<div class="price-divider"></div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>جميع المنصات</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>بدون حد ثابت</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>أولوية في الدعم</div>
+<div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>حلول مخصصة</div>
+<div style="margin-top:auto;padding-top:20px;">
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Custom%20نشر" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
+</div>
+</div>
     </div>
-    <!-- Growth -->
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:28px;transition:all 0.35s;" class="fade-up d1" onmouseover="this.style.borderColor='rgba(245,196,0,0.3)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
-      <div style="font-size:0.85rem;font-weight:700;color:var(--text-dim);margin-bottom:4px;">Growth</div>
-      <div style="font-size:2rem;font-weight:900;margin:12px 0 4px;" class="gold-text">899</div>
-      <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:20px;">جنيه / شهر</div>
-      <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;display:flex;flex-direction:column;gap:10px;">
-        <div>✓ منصتين</div>
-        <div>✓ 60 منشور</div>
-        <div>✓ ستوري تلقائية</div>
-      </div>
-      <a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20الاشتراك%20في%20باقة%20Growth%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:0.85rem;">اشترك الآن</a>
-    </div>
-    <!-- Business -->
-    <div style="background:linear-gradient(160deg,rgba(245,196,0,0.1),rgba(245,196,0,0.03));border:1.5px solid rgba(245,196,0,0.4);border-radius:20px;padding:28px;position:relative;transform:scale(1.03);box-shadow:0 0 40px rgba(245,196,0,0.1);" class="fade-up d2">
-      <div style="position:absolute;top:16px;left:16px;background:var(--gold);color:#07070a;font-size:0.7rem;font-weight:800;padding:4px 12px;border-radius:50px;">الأكثر طلباً</div>
-      <div style="font-size:0.85rem;font-weight:700;color:var(--gold);margin-bottom:4px;">Business</div>
-      <div style="font-size:2rem;font-weight:900;margin:12px 0 4px;" class="gold-text">1499</div>
-      <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:20px;">جنيه / شهر</div>
-      <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;display:flex;flex-direction:column;gap:10px;">
-        <div>✓ 5 منصات</div>
-        <div>✓ نشر يومي</div>
-        <div>✓ ستوري + جدولة شهر</div>
-      </div>
-      <a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20الاشتراك%20في%20باقة%20Business%20للنشر%20التلقائي" target="_blank" style="display:block;text-align:center;width:100%;font-size:0.85rem;">اشترك الآن</a>
-    </div>
-    <!-- Custom -->
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:28px;transition:all 0.35s;" class="fade-up d3" onmouseover="this.style.borderColor='rgba(245,196,0,0.3)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
-      <div style="font-size:0.85rem;font-weight:700;color:var(--text-dim);margin-bottom:4px;">Custom</div>
-      <div style="font-size:1.2rem;font-weight:700;margin:12px 0 4px;color:var(--text);">باقة مخصصة</div>
-      <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:20px;">حسب احتياجك بالظبط</div>
-      <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;display:flex;flex-direction:column;gap:10px;">
-        <div>✓ كل المنصات</div>
-        <div>✓ بدون حد ثابت</div>
-        <div>✓ أولوية في الدعم</div>
-      </div>
-      <a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20نشر%20مخصصة" target="_blank" style="display:block;text-align:center;width:100%;font-size:0.85rem;">تواصل معنا</a>
-    </div>
-  </div>
-</section>
 
 <!-- FINAL CTA -->
 <section style="padding:80px 24px;max-width:900px;margin:0 auto;">
@@ -382,6 +408,60 @@ function resizeHero(){const g=document.getElementById('heroGrid');if(g)g.style.g
 resizeHero();addEventListener('resize',resizeHero);
 function resizeFeat(){const g=document.getElementById('featGrid');if(g)g.style.gridTemplateColumns=innerWidth<768?'1fr':'1fr 1fr';}
 resizeFeat();addEventListener('resize',resizeFeat);
+</script>
+<script>
+// ══════════════════════════════════════════
+// COUNTDOWN TIMER — resets every 24h (fake urgency)
+// Stores deadline in localStorage-like cookie, resets when expired
+// ══════════════════════════════════════════
+(function() {
+  var TIMER_KEY = 'enginity_deadline';
+  var now = Date.now();
+  var deadline;
+  
+  // Try to get stored deadline
+  try {
+    var stored = sessionStorage.getItem(TIMER_KEY);
+    if (stored) {
+      deadline = parseInt(stored);
+      // If expired, reset
+      if (now >= deadline) {
+        deadline = now + 24 * 60 * 60 * 1000;
+        sessionStorage.setItem(TIMER_KEY, deadline);
+      }
+    } else {
+      // Random start between 2-22 hours remaining (feels more authentic)
+      var hoursLeft = 4 + Math.floor(Math.random() * 14); // 4-18 hours left
+      deadline = now + hoursLeft * 60 * 60 * 1000;
+      sessionStorage.setItem(TIMER_KEY, deadline);
+    }
+  } catch(e) {
+    deadline = now + 18 * 60 * 60 * 1000;
+  }
+
+  function pad(n) { return n < 10 ? '0' + n : n; }
+
+  function updateTimers() {
+    var remaining = deadline - Date.now();
+    if (remaining <= 0) {
+      // Reset
+      deadline = Date.now() + 24 * 60 * 60 * 1000;
+      try { sessionStorage.setItem(TIMER_KEY, deadline); } catch(e){}
+      remaining = deadline - Date.now();
+    }
+    var h = Math.floor(remaining / 3600000);
+    var m = Math.floor((remaining % 3600000) / 60000);
+    var s = Math.floor((remaining % 60000) / 1000);
+    
+    document.querySelectorAll('.timer-h').forEach(function(el) { el.textContent = pad(h); });
+    document.querySelectorAll('.timer-m').forEach(function(el) { el.textContent = pad(m); });
+    document.querySelectorAll('.timer-s').forEach(function(el) { el.textContent = pad(s); });
+  }
+
+  updateTimers();
+  setInterval(updateTimers, 1000);
+})();
+
 </script>
 </body>
 </html>

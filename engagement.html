@@ -88,6 +88,19 @@ nav.stuck{background:rgba(7,7,10,.9);backdrop-filter:blur(22px);border-bottom:1p
   <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
+<!-- ANNOUNCEMENT BAR -->
+<div id="announcement-bar" style="background:linear-gradient(135deg,#c9a000,#F5C400,#c9a000);padding:10px 24px;text-align:center;position:relative;z-index:1000;">
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-family:'Cairo',sans-serif;">
+    <span style="font-size:.82rem;font-weight:800;color:#07070a;">🔥 عرض محدود — خصم 60% على الاشتراك الشهري</span>
+    <div style="display:flex;align-items:center;gap:8px;background:rgba(0,0,0,0.15);border-radius:50px;padding:5px 14px;">
+      <span style="font-size:.72rem;font-weight:700;color:#07070a;">ينتهي خلال:</span>
+      <div style="display:flex;align-items:center;gap:4px;font-weight:900;font-size:.9rem;color:#07070a;">
+        <span class="timer-h">18</span><span>:</span><span class="timer-m">42</span><span>:</span><span class="timer-s">07</span>
+      </div>
+    </div>
+    <button onclick="document.getElementById('announcement-bar').style.display='none'" style="background:none;border:none;cursor:pointer;color:rgba(0,0,0,0.4);font-size:1rem;padding:0 4px;">✕</button>
+  </div>
+</div>
 <nav id="nav">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
     <a href="index.html" style="font-size:1.4rem;font-weight:900;letter-spacing:.13em;text-decoration:none;" class="gold-text">ENGINITY</a>
@@ -307,13 +320,43 @@ nav.stuck{background:rgba(7,7,10,.9);backdrop-filter:blur(22px);border-bottom:1p
       <div style="text-align:center;flex-shrink:0;">
         <div style="font-size:.7rem;color:var(--text-dim);margin-bottom:4px;">مثال: الشهر الأول</div>
         <div style="background:rgba(245,196,0,0.08);border:1px solid rgba(245,196,0,0.18);border-radius:10px;padding:10px 18px;">
-          <div style="font-size:.78rem;color:var(--text-dim);">باقة Starter (500 رسالة)</div>
-          <div style="font-size:1rem;font-weight:900;" class="gold-text">199 + 999 = 1,198 جنيه</div>
-          <div style="font-size:.68rem;color:var(--text-dim);margin-top:2px;">الشهر الثاني: 199 جنيه بس</div>
+          <div style="font-size:.78rem;color:var(--text-dim);">باقة Starter (1,000 رسالة)</div>
+          <div style="font-size:1rem;font-weight:900;" class="gold-text">700 + 999 = 1,699 جنيه</div>
+          <div style="font-size:.68rem;color:var(--text-dim);margin-top:2px;">الشهر الثاني: 700 جنيه بس</div>
         </div>
       </div>
     </div>
 
+
+    <!-- Discount + Timer Banner -->
+    <div style="background:linear-gradient(135deg,rgba(245,196,0,0.1),rgba(245,196,0,0.04));border:1.5px solid rgba(245,196,0,0.35);border-radius:20px;padding:22px 28px;margin-bottom:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;" class="fade-up">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="background:var(--gold);color:#07070a;font-size:.72rem;font-weight:900;padding:6px 14px;border-radius:50px;letter-spacing:.05em;white-space:nowrap;">خصم 60%</div>
+        <div>
+          <div style="font-size:.9rem;font-weight:800;margin-bottom:2px;">عرض الإطلاق — لفترة محدودة</div>
+          <div style="font-size:.78rem;color:var(--text-dim);">الأسعار المعروضة بعد الخصم · السعر الأصلي مشطوب</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <span style="font-size:.78rem;color:var(--text-dim);font-weight:600;">ينتهي العرض خلال:</span>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-h" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">18</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">ساعة</div>
+          </div>
+          <span style="font-size:1.2rem;font-weight:900;color:var(--gold);">:</span>
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-m" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">42</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">دقيقة</div>
+          </div>
+          <span style="font-size:1.2rem;font-weight:900;color:var(--gold);">:</span>
+          <div style="background:rgba(7,7,10,0.8);border:1px solid rgba(245,196,0,0.3);border-radius:8px;padding:8px 12px;text-align:center;min-width:52px;">
+            <div class="timer-s" style="font-size:1.3rem;font-weight:900;color:var(--gold);line-height:1;">07</div>
+            <div style="font-size:.58rem;color:var(--text-dim);margin-top:2px;">ثانية</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Platform selector -->
     <div style="display:flex;justify-content:center;margin-bottom:40px;" class="fade-up">
       <div class="platform-tabs">
@@ -322,197 +365,194 @@ nav.stuck{background:rgba(7,7,10,.9);backdrop-filter:blur(22px);border-bottom:1p
         <button class="p-tab" onclick="switchPlatform('both',this)">🔥 الاتنين مع بعض</button>
       </div>
     </div>
-
     <div id="pkg-ig">
 <div class="price-grid">
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Starter</div>
-<div class="price-msgs">📩 500 رسالة / شهر</div>
-<div class="price-amount gold-text">199</div>
+<div class="price-msgs">📩 1,000 رسالة / شهر</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">1,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">700</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,198 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(199 + 999 setup) — الشهر الثاني: 199 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,699 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(700 + 999 setup) — الشهر الثاني: 700 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Instagram DMs فقط</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent مدرّب على بيزنسك</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>رد في أقل من 5 ثواني</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير شهري</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Starter%20IG" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Starter%20AI%20Agent%20Instagram" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Growth</div>
 <div class="price-msgs">📩 2,000 رسالة / شهر</div>
-<div class="price-amount gold-text">499</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">3,000 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">1,200</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,498 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(499 + 999 setup) — الشهر الثاني: 499 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">2,199 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(1,200 + 999 setup) — الشهر الثاني: 1,200 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Instagram DMs فقط</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent متقدم</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تصعيد ذكي للبشري</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير أسبوعي</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Growth%20IG" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Growth%20AI%20Agent%20Instagram" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card featured">
 <div class="pop-badge">الأكثر طلباً</div>
 <div class="price-name" style="color:var(--gold);">Pro</div>
 <div class="price-msgs">📩 5,000 رسالة / شهر</div>
-<div class="price-amount gold-text">999</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">6,300 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">2,500</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,998 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(999 + 999 setup) — الشهر الثاني: 999 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,499 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,500 + 999 setup) — الشهر الثاني: 2,500 بس</span></div>
 <div class="price-divider" style="background:rgba(245,196,0,0.15);"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Instagram DMs + كومنتات</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent متقدم جداً</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تحديث Knowledge Base شهري</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>أولوية في الدعم</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20Pro%20IG" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Pro%20AI%20Agent%20Instagram" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Business</div>
 <div class="price-msgs">📩 15,000 رسالة / شهر</div>
-<div class="price-amount gold-text">2,499</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">13,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">5,500</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,498 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,499 + 999 setup) — الشهر الثاني: 2,499 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">6,499 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(5,500 + 999 setup) — الشهر الثاني: 5,500 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>كل قنوات Instagram</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Multi-agent للفرق</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Dashboard متقدم</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>دعم 24/7 مخصص</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Business%20IG" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Business%20AI%20Agent%20Instagram" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
 </div>
 </div>
 </div>
     </div>
-
     <div id="pkg-fb" style="display:none;">
 <div class="price-grid">
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Starter</div>
-<div class="price-msgs">📩 500 رسالة / شهر</div>
-<div class="price-amount gold-text">199</div>
+<div class="price-msgs">📩 1,000 رسالة / شهر</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">1,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">700</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,198 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(199 + 999 setup) — الشهر الثاني: 199 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,699 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(700 + 999 setup) — الشهر الثاني: 700 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Facebook Messenger فقط</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent مدرّب</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>رد فوري 24/7</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير شهري</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Starter%20FB" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Starter%20AI%20Agent%20Facebook" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Growth</div>
 <div class="price-msgs">📩 2,000 رسالة / شهر</div>
-<div class="price-amount gold-text">499</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">3,000 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">1,200</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,498 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(499 + 999 setup) — الشهر الثاني: 499 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">2,199 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(1,200 + 999 setup) — الشهر الثاني: 1,200 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Messenger + كومنتات FB</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent متقدم</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تصعيد للبشري</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير أسبوعي</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Growth%20FB" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Growth%20AI%20Agent%20Facebook" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card featured">
 <div class="pop-badge">الأكثر طلباً</div>
 <div class="price-name" style="color:var(--gold);">Pro</div>
 <div class="price-msgs">📩 5,000 رسالة / شهر</div>
-<div class="price-amount gold-text">999</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">6,300 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">2,500</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,998 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(999 + 999 setup) — الشهر الثاني: 999 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,499 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,500 + 999 setup) — الشهر الثاني: 2,500 بس</span></div>
 <div class="price-divider" style="background:rgba(245,196,0,0.15);"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Messenger + كومنتات + Ads</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent متقدم جداً</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تحديث شهري للـ Agent</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>أولوية في الدعم</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20Pro%20FB" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Pro%20AI%20Agent%20Facebook" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Business</div>
 <div class="price-msgs">📩 15,000 رسالة / شهر</div>
-<div class="price-amount gold-text">2,499</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">13,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">5,500</div>
 <div class="price-period">جنيه مصري / شهرياً</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,498 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,499 + 999 setup) — الشهر الثاني: 2,499 بس</span></div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">6,499 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(5,500 + 999 setup) — الشهر الثاني: 5,500 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>جميع قنوات Facebook</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Multi-agent للفرق</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Dashboard متقدم</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>دعم 24/7 مخصص</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Business%20FB" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20باقة%20Business%20AI%20Agent%20Facebook" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
 </div>
 </div>
 </div>
     </div>
-
     <div id="pkg-both" style="display:none;">
 <div class="price-grid">
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Starter Bundle</div>
-<div class="price-msgs">📩 1,000 رسالة / شهر</div>
-<div class="price-amount gold-text">349</div>
-<div class="price-period">جنيه مصري / شهرياً · وفّر 14%</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,348 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(349 + 999 setup) — الشهر الثاني: 349 بس</span></div>
+<div class="price-msgs">📩 2,000 رسالة / شهر على المنصتين</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">2,800 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">1,299</div>
+<div class="price-period">جنيه مصري / شهرياً · وفّر 7%</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">2,298 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(1,299 + 999 setup) — الشهر الثاني: 1,299 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Instagram DMs + Facebook Messenger</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Agent واحد للمنصتين</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير موحد شهري</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Starter%20Bundle" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20Starter%20Bundle%20للمنصتين" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Growth Bundle</div>
 <div class="price-msgs">📩 4,000 رسالة / شهر</div>
-<div class="price-amount gold-text">849</div>
-<div class="price-period">جنيه مصري / شهرياً · وفّر 15%</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">1,848 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(849 + 999 setup) — الشهر الثاني: 849 بس</span></div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">5,400 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">2,199</div>
+<div class="price-period">جنيه مصري / شهرياً · وفّر 8%</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">3,198 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(2,199 + 999 setup) — الشهر الثاني: 2,199 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>IG + FB + الكومنتات</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>AI Agent موحد ذكي</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تصعيد ذكي للبشري</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تقرير أسبوعي</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Growth%20Bundle" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20Growth%20Bundle%20للمنصتين" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card featured">
 <div class="pop-badge">الأكثر طلباً</div>
 <div class="price-name" style="color:var(--gold);">Pro Bundle</div>
 <div class="price-msgs">📩 10,000 رسالة / شهر</div>
-<div class="price-amount gold-text">1,699</div>
-<div class="price-period">جنيه مصري / شهرياً · وفّر 15%</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">2,698 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(1,699 + 999 setup) — الشهر الثاني: 1,699 بس</span></div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">11,500 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">4,599</div>
+<div class="price-period">جنيه مصري / شهرياً · وفّر 8%</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">5,598 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(4,599 + 999 setup) — الشهر الثاني: 4,599 بس</span></div>
 <div class="price-divider" style="background:rgba(245,196,0,0.15);"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>كل قنوات IG + FB</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>تحديث شهري للـ Agent</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>أولوية في الدعم</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20Pro%20Bundle" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
+<a class="btn-gold" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20Pro%20Bundle%20للمنصتين" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">اشترك الآن</a>
 </div>
 </div>
 <div class="price-card" onmouseover="this.style.borderColor='rgba(245,196,0,0.32)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.transform='translateY(0)'">
 <div class="price-name">Business Bundle</div>
 <div class="price-msgs">📩 30,000 رسالة / شهر</div>
-<div class="price-amount gold-text">3,999</div>
-<div class="price-period">جنيه مصري / شهرياً · وفّر 20%</div>
-<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">4,998 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(3,999 + 999 setup) — الشهر الثاني: 3,999 بس</span></div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:.82rem;color:var(--text-dim);text-decoration:line-through;">27,500 جنيه</span><span style="background:var(--gold);color:#07070a;font-size:.65rem;font-weight:900;padding:2px 8px;border-radius:50px;">خصم 60%</span></div><div class="price-amount gold-text">9,999</div>
+<div class="price-period">جنيه مصري / شهرياً · وفّر 9%</div>
+<div style="background:rgba(245,196,0,0.07);border:1px solid rgba(245,196,0,0.15);border-radius:8px;padding:7px 12px;margin-bottom:4px;font-size:.76rem;line-height:1.7;"><span style="color:var(--text-dim);">أول شهر:</span> <strong style="color:var(--gold);">10,998 جنيه</strong> <span style="color:var(--text-dim);font-size:.68rem;">(9,999 + 999 setup) — الشهر الثاني: 9,999 بس</span></div>
 <div class="price-divider"></div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>جميع القنوات</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Multi-agent للفرق</div>
 <div class="pf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>دعم 24/7 مخصص</div>
 <div style="margin-top:auto;padding-top:20px;">
-<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20Business%20Bundle" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
+<a class="btn-outline" href="https://wa.me/201501053538?text=مرحباً،%20أريد%20Business%20Bundle%20للمنصتين" target="_blank" style="display:block;text-align:center;width:100%;font-size:.85rem;">تواصل معنا</a>
 </div>
 </div>
 </div>
@@ -573,6 +613,60 @@ function switchPlatform(p, btn) {
 function resizeHero(){const g=document.getElementById('heroGrid');if(g)g.style.gridTemplateColumns=innerWidth<768?'1fr':'1fr 1fr';}
 function resizeHow(){const g=document.getElementById('howGrid');if(g)g.style.gridTemplateColumns=innerWidth<768?'1fr':'1fr 1fr';}
 resizeHero();resizeHow();addEventListener('resize',()=>{resizeHero();resizeHow();});
+</script>
+<script>
+// ══════════════════════════════════════════
+// COUNTDOWN TIMER — resets every 24h (fake urgency)
+// Stores deadline in localStorage-like cookie, resets when expired
+// ══════════════════════════════════════════
+(function() {
+  var TIMER_KEY = 'enginity_deadline';
+  var now = Date.now();
+  var deadline;
+  
+  // Try to get stored deadline
+  try {
+    var stored = sessionStorage.getItem(TIMER_KEY);
+    if (stored) {
+      deadline = parseInt(stored);
+      // If expired, reset
+      if (now >= deadline) {
+        deadline = now + 24 * 60 * 60 * 1000;
+        sessionStorage.setItem(TIMER_KEY, deadline);
+      }
+    } else {
+      // Random start between 2-22 hours remaining (feels more authentic)
+      var hoursLeft = 4 + Math.floor(Math.random() * 14); // 4-18 hours left
+      deadline = now + hoursLeft * 60 * 60 * 1000;
+      sessionStorage.setItem(TIMER_KEY, deadline);
+    }
+  } catch(e) {
+    deadline = now + 18 * 60 * 60 * 1000;
+  }
+
+  function pad(n) { return n < 10 ? '0' + n : n; }
+
+  function updateTimers() {
+    var remaining = deadline - Date.now();
+    if (remaining <= 0) {
+      // Reset
+      deadline = Date.now() + 24 * 60 * 60 * 1000;
+      try { sessionStorage.setItem(TIMER_KEY, deadline); } catch(e){}
+      remaining = deadline - Date.now();
+    }
+    var h = Math.floor(remaining / 3600000);
+    var m = Math.floor((remaining % 3600000) / 60000);
+    var s = Math.floor((remaining % 60000) / 1000);
+    
+    document.querySelectorAll('.timer-h').forEach(function(el) { el.textContent = pad(h); });
+    document.querySelectorAll('.timer-m').forEach(function(el) { el.textContent = pad(m); });
+    document.querySelectorAll('.timer-s').forEach(function(el) { el.textContent = pad(s); });
+  }
+
+  updateTimers();
+  setInterval(updateTimers, 1000);
+})();
+
 </script>
 </body>
 </html>
